@@ -35,4 +35,4 @@ app.use("/files", express.static(path.resolve(__dirname, "..", "temp")));
 
 app.use(require("./routes"));
 
-server.listen(pocess.enc.PORT || 3333);
+server.listen(pocess.env.PORT || 3333);
